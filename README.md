@@ -1,4 +1,4 @@
-# 项目说明
+# User_Behaviour_Analysis项目说明
 **具体分析步骤以及结果见"User_Behaviour_Analysis.ipynb"**
 
 数据太大，请至官网自行下载：https://tianchi.aliyun.com/dataset/dataDetail?dataId=42
@@ -51,4 +51,4 @@
 
 - 本项目的数据记录了2015年05月11日-2015年11月11日期间每一天每一个淘宝用户的**行为**（点击，收藏，加购，购买），以及这些用户的具体**信息**（性别，年龄）.
 
-本项目共使用了两个表"user_info_format1.csv"(约42万行数据)与"user_log_format1.csv"(约5千万行数据)，每个表字段的具体说明如下：
+本项目共使用了两个表"user_info_format1.csv"(约42万行数据)与"user_log_format1.csv"(约5千万行数据)，每个表字段的具体说明参见官网
