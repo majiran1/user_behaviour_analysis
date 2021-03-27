@@ -3,6 +3,40 @@
 
 数据太大，请至官网自行下载：https://tianchi.aliyun.com/dataset/dataDetail?dataId=42
 
+## 项目目录
+- 导包与数据
+- 数据说明
+- 数据预处理
+  - 随机取样
+  - 处理时间数据
+- 解释性数据分析(EDA)
+  - 时间维度对PV,UV进行分析
+  - 用户行为分析
+    - 时间维度
+    - 行为转化漏斗
+      - 日常期间行为转化漏斗
+      - 双11期间行为转化漏斗
+    - 用户维度
+- 用户聚类
+  - 获取用户特征
+    - 为用户新增RFM特征
+    - 用户特征表合并
+  - K-Means聚类
+  - 评估聚类结果
+- A/B Testing
+  - 用户分流
+  - 生成实验数据
+  - 假设检验
+    - 两页面用户“转化率”之间的检验
+      - z检验
+      - 计算效应量
+    - 两页面用户“点击量”均值检验
+      - 条件1：正态性检验
+      - 条件2：方差齐性检验
+      - t检验
+      - 计算效应量
+  - A/B Testing 报告
+
 ## 项目简介
 
 本项目旨在分析电商用户（以淘宝为例）的用户行为，并在为用户聚类的基础上为着陆页的更新迭代提供一个可行性准则。具体步骤概述如下：
@@ -13,20 +47,8 @@
 
 3. 最后在B页面与A页面之间进行A/B Testing：为保证两组用户的同质性，首先根据聚类的结果对用户进行分流，然后针对“转化率”，“点击量”这两个指标分别进行z检验与t检验，并计算出科恩D值，最终做出实验报告。
 ## 数据说明
-
 - 本项目的数据来源于阿里天池平台。数据来源官网：https://tianchi.aliyun.com/dataset/dataDetail?dataId=42
 
 - 本项目的数据记录了2015年05月11日-2015年11月11日期间每一天每一个淘宝用户的**行为**（点击，收藏，加购，购买），以及这些用户的具体**信息**（性别，年龄）.
 
 本项目共使用了两个表"user_info_format1.csv"(约42万行数据)与"user_log_format1.csv"(约5千万行数据)，每个表字段的具体说明如下：
-
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20210325212027797.png" alt="image-20210325212027797" style="zoom: 50%;" />
-
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20210325212044192.png" alt="image-20210325212044192" style="zoom:50%;" />
-
-## 项目目录
-
- ![image](https://github.com/majiran1/user_behaviour_analysis/raw/master/screenshots/34.jpg)
-
-
-
